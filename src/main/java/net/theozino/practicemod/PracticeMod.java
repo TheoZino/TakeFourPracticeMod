@@ -28,6 +28,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.theozino.practicemod.block.ModBlocks;
 import net.theozino.practicemod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -52,6 +53,7 @@ public class PracticeMod
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -61,6 +63,10 @@ public class PracticeMod
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.ORANGE_TOPAZ);
             event.accept(ModItems.PERIDOT);
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ORANGE_TOPAZ_BLOCK);
+            event.accept(ModBlocks.PERIDOT_BLOCK);
         }
     }
 

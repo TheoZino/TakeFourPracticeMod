@@ -1,4 +1,7 @@
 {
   "item.practicemod.orange_topaz": "Orange Topaz",
-  "item.practicemod.peridot": "Peridot"
+  "item.practicemod.peridot": "Peridot",
+
+  "block.practicemod.orange_topaz_block": "Block of Orange Topaz",
+  "block.practicemod.peridot_block": "Block of Peridot"
 }
