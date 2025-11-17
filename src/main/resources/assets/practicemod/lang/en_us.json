@@ -1,7 +1,11 @@
 {
   "item.practicemod.orange_topaz": "Orange Topaz",
   "item.practicemod.peridot": "Peridot",
+  "item.practicemod.raw_orange_topaz": "Raw Orange Topaz",
+  "item.practicemod.raw_peridot": "Raw Peridot",
 
   "block.practicemod.orange_topaz_block": "Block of Orange Topaz",
-  "block.practicemod.peridot_block": "Block of Peridot"
+  "block.practicemod.peridot_block": "Block of Peridot",
+  "block.practicemod.raw_orange_topaz_block": "Block of Raw Orange Topaz",
+  "block.practicemod.raw_peridot_block": "Block of Raw Peridot"
 }

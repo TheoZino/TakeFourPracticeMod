@@ -15,6 +15,10 @@ public class ModItems {
            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PERIDOT = ITEMS.register("peridot",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_ORANGE_TOPAZ = ITEMS.register("raw_orange_topaz",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_PERIDOT = ITEMS.register("raw_peridot",
+            () -> new Item(new Item.Properties()));
 
    public static void register(IEventBus eventBus) {
        ITEMS.register(eventBus);

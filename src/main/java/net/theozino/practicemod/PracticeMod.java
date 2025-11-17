@@ -63,10 +63,14 @@ public class PracticeMod
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.ORANGE_TOPAZ);
             event.accept(ModItems.PERIDOT);
+            event.accept(ModItems.RAW_ORANGE_TOPAZ);
+            event.accept(ModItems.RAW_PERIDOT);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.ORANGE_TOPAZ_BLOCK);
             event.accept(ModBlocks.PERIDOT_BLOCK);
+            event.accept(ModBlocks.RAW_ORANGE_TOPAZ_BLOCK);
+            event.accept(ModBlocks.RAW_PERIDOT_BLOCK);
         }
     }
 
