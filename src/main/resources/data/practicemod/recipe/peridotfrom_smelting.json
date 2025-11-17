@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 245,
+  "experience": 0.5,
+  "group": "peridot",
+  "ingredient": {
+    "item": "practicemod:raw_peridot"
+  },
+  "result": {
+    "id": "practicemod:peridot"
+  }
+}

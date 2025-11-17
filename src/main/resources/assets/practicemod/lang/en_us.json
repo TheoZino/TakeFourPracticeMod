@@ -9,6 +9,11 @@
   "block.practicemod.raw_orange_topaz_block": "Block of Raw Orange Topaz",
   "block.practicemod.raw_peridot_block": "Block of Raw Peridot",
 
+  "block.practicemod.orange_topaz_ore": "Orange Topaz Ore",
+  "block.practicemod.peridot_ore": "Peridot Ore",
+  "block.practicemod.orange_topaz_deepslate_ore": "Orange Topaz Deepslate Ore",
+  "block.practicemod.peridot_deepslate_ore": "Peridot Deepslate Ore",
+
   "creativetab.practicemod.gems_items": "Gem Items",
   "creativetab.practicemod.gems_blocks": "Gem Blocks"
 }

@@ -32,8 +32,13 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.ORANGE_TOPAZ_BLOCK.get());
                         output.accept(ModBlocks.RAW_ORANGE_TOPAZ_BLOCK.get());
+                        output.accept(ModBlocks.ORANGE_TOPAZ_ORE.get());
+                        output.accept(ModBlocks.ORANGE_TOPAZ_DEEPSLATE_ORE.get());
                         output.accept(ModBlocks.PERIDOT_BLOCK.get());
                         output.accept(ModBlocks.RAW_PERIDOT_BLOCK.get());
+                        output.accept(ModBlocks.PERIDOT_ORE.get());
+                        output.accept(ModBlocks.PERIDOT_DEEPSLATE_ORE.get());
+
                     })
 
                     .build());

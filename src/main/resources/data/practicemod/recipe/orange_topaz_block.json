@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "practicemod:orange_topaz"
+      }
+    },
+    "pattern": [
+      "AAA",
+      "AAA",
+      "AAA"
+    ],
+    "result": {
+      "count": 1,
+      "id": "practicemod:orange_topaz_block"
+    }
+  }

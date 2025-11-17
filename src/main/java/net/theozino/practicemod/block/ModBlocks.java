@@ -1,8 +1,11 @@
 package net.theozino.practicemod.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.DropperBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,18 +23,31 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ORANGE_TOPAZ_BLOCK = registerBlock("orange_topaz_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final RegistryObject<Block> RAW_ORANGE_TOPAZ_BLOCK = registerBlock("raw_orange_topaz_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final RegistryObject<Block> ORANGE_TOPAZ_ORE = registerBlock("orange_topaz_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ORANGE_TOPAZ_DEEPSLATE_ORE = registerBlock("orange_topaz_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3,6), BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     public static final RegistryObject<Block> PERIDOT_BLOCK = registerBlock("peridot_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> RAW_ORANGE_TOPAZ_BLOCK = registerBlock("raw_orange_topaz_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-
     public static final RegistryObject<Block> RAW_PERIDOT_BLOCK = registerBlock("raw_peridot_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final RegistryObject<Block> PERIDOT_ORE = registerBlock("peridot_ore",
+            () -> new DropExperienceBlock(UniformInt.of(4, 6), BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PERIDOT_DEEPSLATE_ORE = registerBlock("peridot_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(4,6), BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

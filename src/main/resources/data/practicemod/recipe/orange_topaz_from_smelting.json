@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.4,
+  "group": "orange_topaz",
+  "ingredient": {
+    "item": "practicemod:raw_orange_topaz"
+  },
+  "result": {
+    "id": "practicemod:orange_topaz"
+  }
+}

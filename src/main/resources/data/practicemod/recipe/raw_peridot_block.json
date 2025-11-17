@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "practicemod:raw_peridot"
+      }
+    },
+    "pattern": [
+      "AAA",
+      "AAA",
+      "AAA"
+    ],
+    "result": {
+      "count": 1,
+      "id": "practicemod:raw_peridot_block"
+    }
+  }

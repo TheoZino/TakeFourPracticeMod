@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "practicemod:raw_orange_topaz_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "practicemod:raw_orange_topaz"
+  }
+}
