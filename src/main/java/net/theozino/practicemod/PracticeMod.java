@@ -29,6 +29,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.theozino.practicemod.block.ModBlocks;
+import net.theozino.practicemod.item.ModCreativeModeTabs;
 import net.theozino.practicemod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -51,6 +52,8 @@ public class PracticeMod
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
